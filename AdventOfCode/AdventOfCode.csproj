@@ -1,0 +1,231 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <OutputType>Exe</OutputType>
+        <TargetFramework>net8.0</TargetFramework>
+        <ImplicitUsings>enable</ImplicitUsings>
+        <Nullable>enable</Nullable>
+    </PropertyGroup>
+
+    <ItemGroup>
+      <None Update="Y2023\D01\input.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Y2023\D02\input.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Y2015\D01\input.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+      <None Update="Y2023\D03\input.txt">
+        <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      </None>
+    </ItemGroup>
+
+    <ItemGroup>
+      <Folder Include="Y2015\D02\" />
+      <Folder Include="Y2015\D03\" />
+      <Folder Include="Y2015\D04\" />
+      <Folder Include="Y2015\D05\" />
+      <Folder Include="Y2015\D06\" />
+      <Folder Include="Y2015\D07\" />
+      <Folder Include="Y2015\D08\" />
+      <Folder Include="Y2015\D09\" />
+      <Folder Include="Y2015\D10\" />
+      <Folder Include="Y2015\D11\" />
+      <Folder Include="Y2015\D12\" />
+      <Folder Include="Y2015\D13\" />
+      <Folder Include="Y2015\D14\" />
+      <Folder Include="Y2015\D15\" />
+      <Folder Include="Y2015\D16\" />
+      <Folder Include="Y2015\D17\" />
+      <Folder Include="Y2015\D18\" />
+      <Folder Include="Y2015\D19\" />
+      <Folder Include="Y2015\D20\" />
+      <Folder Include="Y2015\D21\" />
+      <Folder Include="Y2015\D22\" />
+      <Folder Include="Y2015\D23\" />
+      <Folder Include="Y2015\D24\" />
+      <Folder Include="Y2015\D25\" />
+      <Folder Include="Y2016\D01\" />
+      <Folder Include="Y2016\D02\" />
+      <Folder Include="Y2016\D03\" />
+      <Folder Include="Y2016\D04\" />
+      <Folder Include="Y2016\D05\" />
+      <Folder Include="Y2016\D06\" />
+      <Folder Include="Y2016\D07\" />
+      <Folder Include="Y2016\D08\" />
+      <Folder Include="Y2016\D09\" />
+      <Folder Include="Y2016\D10\" />
+      <Folder Include="Y2016\D11\" />
+      <Folder Include="Y2016\D12\" />
+      <Folder Include="Y2016\D13\" />
+      <Folder Include="Y2016\D14\" />
+      <Folder Include="Y2016\D15\" />
+      <Folder Include="Y2016\D16\" />
+      <Folder Include="Y2016\D17\" />
+      <Folder Include="Y2016\D18\" />
+      <Folder Include="Y2016\D19\" />
+      <Folder Include="Y2016\D20\" />
+      <Folder Include="Y2016\D21\" />
+      <Folder Include="Y2016\D22\" />
+      <Folder Include="Y2016\D23\" />
+      <Folder Include="Y2016\D24\" />
+      <Folder Include="Y2016\D25\" />
+      <Folder Include="Y2017\D01\" />
+      <Folder Include="Y2017\D02\" />
+      <Folder Include="Y2017\D03\" />
+      <Folder Include="Y2017\D04\" />
+      <Folder Include="Y2017\D05\" />
+      <Folder Include="Y2017\D06\" />
+      <Folder Include="Y2017\D07\" />
+      <Folder Include="Y2017\D08\" />
+      <Folder Include="Y2017\D09\" />
+      <Folder Include="Y2017\D10\" />
+      <Folder Include="Y2017\D11\" />
+      <Folder Include="Y2017\D12\" />
+      <Folder Include="Y2017\D13\" />
+      <Folder Include="Y2017\D14\" />
+      <Folder Include="Y2017\D15\" />
+      <Folder Include="Y2017\D16\" />
+      <Folder Include="Y2017\D17\" />
+      <Folder Include="Y2017\D18\" />
+      <Folder Include="Y2017\D19\" />
+      <Folder Include="Y2017\D20\" />
+      <Folder Include="Y2017\D21\" />
+      <Folder Include="Y2017\D22\" />
+      <Folder Include="Y2017\D23\" />
+      <Folder Include="Y2017\D24\" />
+      <Folder Include="Y2017\D25\" />
+      <Folder Include="Y2018\D01\" />
+      <Folder Include="Y2018\D02\" />
+      <Folder Include="Y2018\D03\" />
+      <Folder Include="Y2018\D04\" />
+      <Folder Include="Y2018\D05\" />
+      <Folder Include="Y2018\D06\" />
+      <Folder Include="Y2018\D07\" />
+      <Folder Include="Y2018\D08\" />
+      <Folder Include="Y2018\D09\" />
+      <Folder Include="Y2018\D10\" />
+      <Folder Include="Y2018\D11\" />
+      <Folder Include="Y2018\D12\" />
+      <Folder Include="Y2018\D13\" />
+      <Folder Include="Y2018\D14\" />
+      <Folder Include="Y2018\D15\" />
+      <Folder Include="Y2018\D16\" />
+      <Folder Include="Y2018\D17\" />
+      <Folder Include="Y2018\D18\" />
+      <Folder Include="Y2018\D19\" />
+      <Folder Include="Y2018\D20\" />
+      <Folder Include="Y2018\D21\" />
+      <Folder Include="Y2018\D22\" />
+      <Folder Include="Y2018\D23\" />
+      <Folder Include="Y2018\D24\" />
+      <Folder Include="Y2018\D25\" />
+      <Folder Include="Y2019\D01\" />
+      <Folder Include="Y2019\D02\" />
+      <Folder Include="Y2019\D03\" />
+      <Folder Include="Y2019\D04\" />
+      <Folder Include="Y2019\D05\" />
+      <Folder Include="Y2019\D06\" />
+      <Folder Include="Y2019\D07\" />
+      <Folder Include="Y2019\D08\" />
+      <Folder Include="Y2019\D09\" />
+      <Folder Include="Y2019\D10\" />
+      <Folder Include="Y2019\D11\" />
+      <Folder Include="Y2019\D12\" />
+      <Folder Include="Y2019\D13\" />
+      <Folder Include="Y2019\D14\" />
+      <Folder Include="Y2019\D15\" />
+      <Folder Include="Y2019\D16\" />
+      <Folder Include="Y2019\D17\" />
+      <Folder Include="Y2019\D18\" />
+      <Folder Include="Y2019\D19\" />
+      <Folder Include="Y2019\D20\" />
+      <Folder Include="Y2019\D21\" />
+      <Folder Include="Y2019\D22\" />
+      <Folder Include="Y2019\D23\" />
+      <Folder Include="Y2019\D24\" />
+      <Folder Include="Y2019\D25\" />
+      <Folder Include="Y2020\D01\" />
+      <Folder Include="Y2020\D02\" />
+      <Folder Include="Y2020\D03\" />
+      <Folder Include="Y2020\D04\" />
+      <Folder Include="Y2020\D05\" />
+      <Folder Include="Y2020\D06\" />
+      <Folder Include="Y2020\D07\" />
+      <Folder Include="Y2020\D08\" />
+      <Folder Include="Y2020\D09\" />
+      <Folder Include="Y2020\D10\" />
+      <Folder Include="Y2020\D11\" />
+      <Folder Include="Y2020\D12\" />
+      <Folder Include="Y2020\D13\" />
+      <Folder Include="Y2020\D14\" />
+      <Folder Include="Y2020\D15\" />
+      <Folder Include="Y2020\D16\" />
+      <Folder Include="Y2020\D17\" />
+      <Folder Include="Y2020\D18\" />
+      <Folder Include="Y2020\D19\" />
+      <Folder Include="Y2020\D20\" />
+      <Folder Include="Y2020\D21\" />
+      <Folder Include="Y2020\D22\" />
+      <Folder Include="Y2020\D23\" />
+      <Folder Include="Y2020\D24\" />
+      <Folder Include="Y2020\D25\" />
+      <Folder Include="Y2021\D01\" />
+      <Folder Include="Y2021\D02\" />
+      <Folder Include="Y2021\D03\" />
+      <Folder Include="Y2021\D04\" />
+      <Folder Include="Y2021\D05\" />
+      <Folder Include="Y2021\D06\" />
+      <Folder Include="Y2021\D07\" />
+      <Folder Include="Y2021\D08\" />
+      <Folder Include="Y2021\D09\" />
+      <Folder Include="Y2021\D10\" />
+      <Folder Include="Y2021\D11\" />
+      <Folder Include="Y2021\D12\" />
+      <Folder Include="Y2021\D13\" />
+      <Folder Include="Y2021\D14\" />
+      <Folder Include="Y2021\D15\" />
+      <Folder Include="Y2021\D16\" />
+      <Folder Include="Y2021\D17\" />
+      <Folder Include="Y2021\D18\" />
+      <Folder Include="Y2021\D19\" />
+      <Folder Include="Y2021\D20\" />
+      <Folder Include="Y2021\D21\" />
+      <Folder Include="Y2021\D22\" />
+      <Folder Include="Y2021\D23\" />
+      <Folder Include="Y2021\D24\" />
+      <Folder Include="Y2021\D25\" />
+      <Folder Include="Y2022\D01\" />
+      <Folder Include="Y2022\D02\" />
+      <Folder Include="Y2022\D03\" />
+      <Folder Include="Y2022\D04\" />
+      <Folder Include="Y2022\D05\" />
+      <Folder Include="Y2022\D06\" />
+      <Folder Include="Y2022\D07\" />
+      <Folder Include="Y2022\D08\" />
+      <Folder Include="Y2022\D09\" />
+      <Folder Include="Y2022\D10\" />
+      <Folder Include="Y2022\D11\" />
+      <Folder Include="Y2022\D12\" />
+      <Folder Include="Y2022\D13\" />
+      <Folder Include="Y2022\D14\" />
+      <Folder Include="Y2022\D15\" />
+      <Folder Include="Y2022\D16\" />
+      <Folder Include="Y2022\D17\" />
+      <Folder Include="Y2022\D18\" />
+      <Folder Include="Y2022\D19\" />
+      <Folder Include="Y2022\D20\" />
+      <Folder Include="Y2022\D21\" />
+      <Folder Include="Y2022\D22\" />
+      <Folder Include="Y2022\D23\" />
+      <Folder Include="Y2022\D24\" />
+      <Folder Include="Y2022\D25\" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <PackageReference Include="BetterConsoleTables" Version="1.1.3" />
+    </ItemGroup>
+
+</Project>
