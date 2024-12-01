@@ -1,0 +1,12 @@
+[workspace]
+resolver = "2"
+members = [
+    "utils/aoc",
+
+    "Y2015",
+    "Y2024",
+]
+
+[workspace.dependencies]
+tabled = "0.17.0"
+aoc = { path = "utils/aoc" }
