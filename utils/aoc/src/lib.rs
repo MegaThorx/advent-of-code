@@ -6,6 +6,10 @@ pub trait Solver {
     fn solve_second(&self, lines: Vec<String>) -> String;
 }
 
+pub trait SolverFactory {
+    fn get(&self, day: i32) -> Option<Box<dyn Solver>>;
+}
+
 #[derive(Tabled)]
 pub enum ResultState {
     Correct,
@@ -23,6 +27,27 @@ pub struct Result {
     pub solution_2: String,
     #[tabled(inline)]
     pub solution_2_state: ResultState,
+}
+
+pub fn run_all(solver_factory: Box<dyn SolverFactory>) -> Vec<Result> {
+    let mut results: Vec<Result> = Vec::new();
+
+    for day in 1..25 {
+        let solver = solver_factory.get(day);
+
+        if solver.is_none() {
+            continue;
+        }
+
+        let solver = solver.unwrap();
+
+        let result = run(&solver, day, "example");
+        results.push(result);
+        let result = run(&solver, day, "input");
+        results.push(result);
+    }
+
+    results
 }
 
 pub fn run(solver: &Box<dyn Solver>, day: i32, file: &str) -> Result {
