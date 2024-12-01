@@ -26,7 +26,7 @@ pub struct Result {
 }
 
 pub fn run(solver: &Box<dyn Solver>, day: i32, file: &str) -> Result {
-    let lines = get_lines(&format!("files/{:0>2}_{}.txt", day, file));
+    let lines = get_lines(&format!("files/{:0>2}_{}.txt", day, file)).unwrap();
     let solutions = get_solutions(&format!("files/{:0>2}_{}_solutions.txt", day, file));
 
     let solution_1 = solver.solve_first(lines.clone());
@@ -37,17 +37,15 @@ pub fn run(solver: &Box<dyn Solver>, day: i32, file: &str) -> Result {
     if solutions.is_some() {
         let solutions = solutions.unwrap();
 
-        if solution_1 == solutions.0 {
-            solution_1_state = ResultState::Correct;
-        } else {
-            solution_1_state = ResultState::Incorrect;
-        }
+        solution_1_state = match solution_1 == solutions.0 {
+            true => ResultState::Correct,
+            false => ResultState::Incorrect,
+        };
 
-        if solution_2 == solutions.1 {
-            solution_2_state = ResultState::Correct;
-        } else {
-            solution_2_state = ResultState::Incorrect;
-        }
+        solution_2_state = match solution_2 == solutions.1 {
+            true => ResultState::Correct,
+            false => ResultState::Incorrect,
+        };
     }
 
     Result {
@@ -60,18 +58,7 @@ pub fn run(solver: &Box<dyn Solver>, day: i32, file: &str) -> Result {
     }
 }
 
-pub fn get_lines(file_name: &str) -> Vec<String> {
-    let mut contents = fs::read_to_string(file_name)
-        .expect("Something went wrong reading the file");
-
-    contents = contents.replace("\u{feff}", "");
-    contents = contents.replace("\r\n", "\n");
-    let lines = contents.split("\n");
-
-    lines.map(|line| line.to_string()).collect()
-}
-
-pub fn get_solutions(file_name: &str) -> Option<(String, String)> {
+pub fn get_lines(file_name: &str) -> Option<Vec<String>> {
     let contents = fs::read_to_string(file_name);
 
     if contents.is_err() {
@@ -81,7 +68,19 @@ pub fn get_solutions(file_name: &str) -> Option<(String, String)> {
     let mut contents = contents.unwrap();
     contents = contents.replace("\u{feff}", "");
     contents = contents.replace("\r\n", "\n");
-    let lines = contents.split("\n").collect::<Vec<&str>>();
+    let lines = contents.split("\n");
+
+    Some(lines.map(|line| line.to_string()).collect())
+}
+
+pub fn get_solutions(file_name: &str) -> Option<(String, String)> {
+    let lines = get_lines(file_name);
+
+    if lines.is_none() {
+        return None;
+    }
+
+    let lines = lines.unwrap();
 
     Some((lines[0].to_string(), lines[1].to_string()))
 }
