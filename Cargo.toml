@@ -9,4 +9,5 @@ members = [
 
 [workspace.dependencies]
 tabled = "0.17.0"
+regex = "1.11.1"
 aoc = { path = "utils/aoc" }
