@@ -65,19 +65,18 @@ impl Solver for Day2 {
             if Day2::is_safe(&row) {
                 result += 1;
             } else {
-                for index in 0..row.len() {
-                    let mut numbers: Vec<i64> = Vec::new();
+                if (0..row.len()).any(|index| {
+                    let numbers = row
+                        .clone()
+                        .into_iter()
+                        .enumerate()
+                        .filter(|&(i, _)| index != i)
+                        .map(|(_, e)| e)
+                        .collect();
 
-                    for index2 in 0..row.len() {
-                        if index != index2 {
-                            numbers.push(row[index2]);
-                        }
-                    }
-
-                    if Day2::is_safe(&numbers) {
-                        result += 1;
-                        break;
-                    }
+                    Self::is_safe(&numbers)
+                }) {
+                    result += 1;
                 }
             }
         }
