@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="EMPTY_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/2015_1/Y2015-01/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/2015_1/Y2015-02/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/2024/Y2024-01/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Y2015/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Y2024/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/utils/aoc/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/utils/runner/src" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/2024/Y2024-01/target" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>

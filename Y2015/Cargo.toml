@@ -1,0 +1,10 @@
+[package]
+name = "Y2015"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+aoc.workspace = true
+tabled.workspace = true
+regex.workspace = true
+md5 = "0.7.0"
